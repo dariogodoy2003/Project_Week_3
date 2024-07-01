@@ -1,0 +1,23 @@
+---
+title: "Assignment of Week 3"
+author: "Dario Godoy"
+date: "2024-06-30"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+## Elisa Assay of DNase
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+data("DNase")
+plot_ly(data=DNase, x = ~conc, y = ~density,
+        type="scatter",mode="markers",
+        color = ~Run)
+```
+```{r}
+
+```
+
